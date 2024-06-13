@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: test
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+
+app:
+  jwtSettings:
+    jwtSecret: "PT09PT09PT09PT09PT09PT09PT09PVBST0pFQ1RfU0VDUkVUPT09PT09PT09PT09PT09PT09PT09PT09PT09"
+    jwtExpirationMs: 86400000 #Ms
+    securityApiAccountPrefix: "/api/security/account"
+  apiPrefix: "/api/v1"
+
